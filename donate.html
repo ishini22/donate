@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+        <link rel="stylesheet" type="text/css" href="donate.css">
+        
+        <title> DONATIONS</title>
+        
+    </head>
+
+    <body>
+        <div id="error"></div>
+        <form id="form" action="/" method="GET">
+         <div class = "container">
+        
+    <header>Donation</header>
+    
+    <form action="" class="contact-col" id="frmDonation">
+        <label for="Donations" id="fixedDonations" class="lbdate">Select fixed Donation values from below list</label><br>
+        <span class="title"> Select fixed Donation values from the below list</span><br>
+        <select name="language" class="custom-select" id="fixedDonatons" multiple >
+            <option value="100">LKR 100 </option>
+            <option value="500">LKR 500 </option>
+            <option value="1000">LKR 1000 </option>
+            <option value="2500">LKR 2500 </option>
+            <option value="5000">LKR 5000 </option>
+            
+        </select><br>
+        <div class="form first">
+            <div class="deatils personal">
+                <span class="title"> Personal Details</span><br>
+
+            <div class="fields">   
+                 <div class="input-fields">
+                    <input type="text" id="firstname" name="firstname" placeholder="Enter your First Name" requried>
+                  </div>
+                 <div class="input-fields">
+                    <input type="text" id="lastname" name="lastname"placeholder="Enter your Last Name" requried>
+                    </div>
+                    <div class="input-fields">
+                        <input type="text" id="email" name="email" placeholder="Email" requried>
+                     </div>
+                 <div class="input-fields">
+                    <input type="text" id="address" name="address" placeholder="Address" requried>
+                 </div>
+                 <div class="form first">
+                    <div class="deatils personal">
+                        <span class="title"> Credit Card Details</span><br>
+                    </div>
+            <div class="input-fields">
+                <input type="number" id="cardnumber" name="cardnumber"placeholder="Card Number" requried>
+             </div>
+             <div class="input-fields">
+                <input type="text" id="cardname" name="cardname"placeholder="Card Holder" requried>
+             </div>
+             <div class="input-fields" >
+                <select name="" id="monthInput" class="month-input">
+                    <option value="Expitaion Month" selected disabled>Expiration Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                </div>
+            </div><br>
+            <div class="input-fileds">
+                <select name="" id="yearInput" class="year-input" onselect="inputValidatiom()">
+                    <option value="year" selected disabled>Expiration Year</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>  
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+            </div>
+            <div class="input-fields">
+                <input type="number" id="cvv" name="cvv" placeholder="CVV" requried>
+             </div>
+        </div>
+        <input type="button" value="Donate" id="donateBtn" class="submit-btn" onclick="inputValidation();">
+        
+    </form>
+    <script src="donate.js"></script>
+</form>
+</body>
